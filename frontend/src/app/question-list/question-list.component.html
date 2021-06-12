@@ -1,0 +1,17 @@
+<div *ngFor="let question of questions">
+  <h2>Question {{ question.id }}</h2>
+
+  <h3>
+    {{ question.prompt }}
+  </h3>
+  <h5>Response</h5>
+
+  <app-quiz-response [question]="question">
+  </app-quiz-response>
+
+</div>
+<!--
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->
